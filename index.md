@@ -16,14 +16,17 @@
 <img src="images/First Atlas1024_1.jpg?raw=true"/>
 
 [Map of the Airports, Rivers, and Tree Cover in Alaska]
-<img src="images/Alaska map-Multicolor airports, tree, and lakes1024_1jpg?raw=true"/>
+<img src="images/Alaska map- Multicolor airports, trees, and lakes1024_1.jpg?raw=true"/>
+
+[Mapping Proyections in Alaska and Provinces from Canada]
+<img src="images/Proyections- Alaska, Open Street Map, Canada Provinces- Vectors and Rasters1024_1.jpg?raw=true"/>
 
 
 ---
 
-### Category Name 2
+### Links to Projects
 
-- [Project 1 Title](http://example.com/)
+- [Lab 1-First GIS Maps]()
 - [Project 2 Title](http://example.com/)
 - [Project 3 Title](http://example.com/)
 - [Project 4 Title](http://example.com/)
