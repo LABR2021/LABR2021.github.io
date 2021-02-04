@@ -4,8 +4,8 @@
 
 ### Advanced GIS
 
-[Project 1 Title] 
-<img src="Final Alaska Map.pdf"/>
+[Project 1 Title] (https://github.com/LABR2021/LABR2021.github.io/blob/master/pdf/Laura%20Bayona%20GES687-%20Lab%201-%20PDFsam_merge.pdf)
+ <img src="images/Final Alaska.pdf?raw=true"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
