@@ -2,9 +2,9 @@
 
 ---
 
-### 
+### Advanced GIS
 
-[Project Title 1] 
+[Project 1 Title] 
 <img src="Final Alaska Map.pdf"/>
 
 ---
