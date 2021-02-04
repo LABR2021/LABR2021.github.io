@@ -8,7 +8,7 @@
  <img src="images/Final Alaska Map1024_1.jpg?raw=true"/>
 
 ---
-[Maps of the Shilah Lake in Alaska](https://github.com/LABR2021/LABR2021.github.io/blob/master/pdf/Laura%20Bayona%20GES687-%20Lab%201-%20PDFsam_merge.pdf)
+[Map of Lakes and Airports in Alaska]
 <img src="images/Second Type of Alaska Map1024_1.jpg?raw=true"/>
 
 ---
