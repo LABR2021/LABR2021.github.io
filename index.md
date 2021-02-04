@@ -4,7 +4,7 @@
 
 ### 
 
-[Project Title 1](https://github.com/LABR2021/LABR2021.github.io/blob/master/pdf/Laura%20Bayona%20GES687-%20Lab%201-%20PDFsam_merge.pdf)
+[Project Title 1]
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
