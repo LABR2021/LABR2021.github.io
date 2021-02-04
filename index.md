@@ -1,15 +1,15 @@
-## Portfolio
+## Geography Portfolio
 
 ---
 
-### Advanced GIS
+### Advanced GIS Maps- Lab 1
 
-[Project 1 Title] 
+[Map of Alaska] 
  <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
 [Project 2 Title](https://github.com/LABR2021/LABR2021.github.io/blob/master/pdf/Laura%20Bayona%20GES687-%20Lab%201-%20PDFsam_merge.pdf)
-<img src="images/FinalAlaskaMap.pdf?raw=true"/>
+<img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
 [Project 3 Title](http://example.com/)
