@@ -4,8 +4,8 @@
 
 ### 
 
-[Project Title 1] (/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Project Title 1] 
+<img src="Final Alaska Map.pdf"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
