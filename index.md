@@ -8,12 +8,15 @@
  <img src="images/Final Alaska Map1024_1.jpg?raw=true"/>
 
 ---
-[Map of Lakes and Airports in Alaska]
+[Close Up Lakes and Airports in Alaska]
 <img src="images/Second Type of Alaska Map1024_1.jpg?raw=true"/>
 
 ---
-[Project 3 Title](http://example.com/)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[First Atlas Map of Alaska]
+<img src="images/First Atlas1024_1.jpg?raw=true"/>
+
+[Map of the Airports, Rivers, and Tree Cover in Alaska]
+<img src="images/Alaska map-Multicolor airports, tree, and lakes1024_1jpg?raw=true"/>
 
 
 ---
