@@ -2,9 +2,9 @@
 
 ---
 
-### Lab 1- GIS Maps
+### 
 
-[Project 1 Title](/sample_page)
+[Project Title 1](https://github.com/LABR2021/LABR2021.github.io/blob/master/pdf/Laura%20Bayona%20GES687-%20Lab%201-%20PDFsam_merge.pdf)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
