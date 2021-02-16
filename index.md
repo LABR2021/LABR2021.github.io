@@ -5,13 +5,19 @@
 ### Advanced GIS- Lab 2
 
 [Project 1- Annotated  Bibliography]  
+This contains an image of the annotated bibliography I wrote for my Language, Gender, and Sexuality class.
 <img src="images/QGIS Class Lab First Image 2.jpg?raw=true"/> 
+
 ---
 [Project 2- Statistical Analysis Final Project]
+This shows an image of the final project I did for the class, SOCY604-Statistical Analysis.  It shows the introduction to my final project.
 <img src="images/QGIS Class Lab 2 Second Image 2.jpg?raw=true"/>
+
 ---
 [Project 3- Linguistic Autobiography]
+This is the linguistic autobiography I wrote my Language, Gender, and Sexuality class. 
 <img src="images/QGIS Class Lab 3 Third Image.jpg?raw=true"/>
+
 ---
 
 ### Links to Projects
