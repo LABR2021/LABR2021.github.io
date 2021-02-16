@@ -11,7 +11,7 @@ This contains an image of the annotated bibliography I wrote for my Language, Ge
 ---
 [Project 2- Statistical Analysis Final Project]
 This shows the introduction of the final project I did for the class, SOCY604-Statistical Analysis.  
-<img src="images/QGIS Class Lab 2 Second Image 2.jpg?raw=true"/>
+[<img src="images/QGIS Class Lab 2 Second Image 2.jpg?raw=true"/>](/sample_page2) 
 
 ---
 [Project 3- Linguistic Autobiography]
