@@ -4,11 +4,11 @@
 
 ### Advanced GIS- Lab 2
 
-[Project 1- Annotated  Bibliography About Latina Politicians in Media] 
+[Project 1- Annotated  Bibliography] 
  <img src="images/QGIS Class Lab First Image 2.jpg?raw=true"/>
 
 ---
-[Project 2- Statistical Analysis About the Relationship between Race, Subjective Class, and Political Views]
+[Project 2- Statistical Analysis Final Project]
 <img src="images/QGIS Class Lab 2 Second Image 2.jpg?raw=true"/>
 
 ---
