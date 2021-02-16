@@ -9,7 +9,7 @@
 
 ---
 [Project 2- Statistical Analysis About the Relationship between Race, Subjective Class, and Political Views]
-<img src="images/QGIS Lab 2 Second Image.jpg?raw=true"/>
+<img src="images/QGIS Class Lab 2 Second Image 2.jpg?raw=true"/>
 
 ---
 [Project 3- Linguistic Autobiography]
