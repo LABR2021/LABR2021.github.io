@@ -4,9 +4,9 @@
 
 ### Advanced GIS- Lab 2
 
-[Project 1- Annotated Bibliography]  
+[Project 1- Annotated Bibliography](/sample_page) 
 This contains an image of the annotated bibliography I wrote for my Language, Gender, and Sexuality class.
-[<img src="images/QGIS Class Lab First Image 2.jpg?raw=true"/>](/sample_page) 
+[<img src="images/QGIS Class Lab First Image 2.jpg?raw=true"/>]
 
 ---
 [Project 2- Statistical Analysis Final Project]
