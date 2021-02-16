@@ -16,7 +16,7 @@ This shows the introduction of the final project I did for the class, SOCY604-St
 ---
 [Project 3- Linguistic Autobiography]
 This is the linguistic autobiography I wrote my Language, Gender, and Sexuality class. 
-<img src="images/QGIS Class Lab 3 Third Image.jpg?raw=true"/>
+[<img src="images/QGIS Class Lab 3 Third Image.jpg?raw=true"/>](/sample_page3) 
 
 ---
 
