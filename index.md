@@ -5,7 +5,7 @@
 ### Advanced GIS- Lab 2
 
 [Project 1- Annotated  Bibliography]  
- <img src="images/QGIS Class Lab First Image 2.jpg?raw=true"/> 
+<img src="images/QGIS Class Lab First Image 2.jpg?raw=true"/> 
 ---
 [Project 2- Statistical Analysis Final Project]
 <img src="images/QGIS Class Lab 2 Second Image 2.jpg?raw=true"/>
