@@ -1,6 +1,6 @@
 ## Project 3- Linguistic Autobiography
 
-**Project description:** This is the first page of the linguistic autobiography that I wrote for my Language, Gender, and Sexuality class. I talk about where I grew up and live currently, I talk about what attracted me to the class, and my personal experiences with language. I mention that I grew up learning Puerto Rican Spanish and U.S. American English and the things that influenced my learning: my family members, the towns I grew up in, U.S. based mass media, and the internet.  I also point out that I grew up speaking more Spanglish that my older family members.
+**Project description:** This is the first page of the linguistic autobiography that I wrote for my Language, Gender, and Sexuality class. I talk about where I grew up and live currently, what attracted me to the class, and my personal experiences with language. I mention that I grew up learning Puerto Rican Spanish and U.S. American English and the things that influenced my learning: my family members, the towns I grew up in, U.S. based mass media, and the internet.  I also point out that I grew up speaking more Spanglish than my older family members.
 
 
 ### Making this Project
