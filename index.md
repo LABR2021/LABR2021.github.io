@@ -3,8 +3,7 @@
 ---
 
 ### Advanced GIS 
-Final Project Proposal GES687(/ReadMe_propage.md) 
-
+Final Project Proposal GES687
 
 [Project 1- Annotated Bibliography]
 This contains an image of the annotated bibliography I wrote for my Language, Gender, and Sexuality class.
