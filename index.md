@@ -3,7 +3,7 @@
 ---
 
 ### Advanced GIS 
-[Final Project Proposal GES687](Project 1_687.md/Readme.md)
+[Final Project Proposal GES687](Project 1_687/Readme)
 This contains the proposal for my final project in the GES687 class.
 
 Project 1- Annotated Bibliography
