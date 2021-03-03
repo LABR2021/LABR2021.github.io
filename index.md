@@ -3,8 +3,6 @@
 ---
 
 ### Advanced GIS
-Final Project Proposal for GES 867 
-
 [Project 1- Annotated Bibliography]
 This contains an image of the annotated bibliography I wrote for my Language, Gender, and Sexuality class.
 [<img src="images/QGIS Class Lab First Image 2.jpg?raw=true"/>](/sample_page) 
@@ -23,7 +21,7 @@ This is the linguistic autobiography I wrote my Language, Gender, and Sexuality 
 
 ### Links to Projects
 
-- [Project 1 Title](http://example.com/) 
+- [Project 1 Title](http://Project 1_687.md/ReadMe.md) 
 - [Project 2 Title](http://example.com/)
 - [Project 3 Title](http://example.com/)
 - [Project 4 Title](http://example.com/)
