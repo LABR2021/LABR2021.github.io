@@ -13,9 +13,9 @@ This shows the introduction of the final project I did for the class, SOCY604-St
 [<img src="images/QGIS Class Lab 2 Second Image 2.jpg?raw=true"/>](/sample_page2) 
 
 ---
-Project 3- Linguistic Autobiography
-This is the linguistic autobiography I wrote my Language, Gender, and Sexuality class. 
-[<img src="images/QGIS Class Lab 3 Third Image.jpg?raw=true"/>](/sample_page3) 
+GES687 Project 1 Findings from Puerto Rican Median Income Maps
+
+[<img src="images/Laura Bayona-Roman GES687 Project 1 Findings.jpg?raw=true"/>] 
 
 ---
 
