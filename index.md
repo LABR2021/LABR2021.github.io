@@ -3,17 +3,17 @@
 ---
 
 ### Advanced GIS 
-Project 1- Annotated Bibliography
-This contains an image of the annotated bibliography I wrote for my Language, Gender, and Sexuality class.
-[<img src="images/QGIS Class Lab First Image 2.jpg?raw=true"/>](/sample_page) 
+GES687 Project 1- Map of the Median Income of 11 Puerto Rican Counties (2014)
+
+[<img src="images/The Median Income of 11 Puerto Rican Counties 2014.jpg?raw=true"/>]
 
 ---
-Project 2- Statistical Analysis Final Project
-This shows the introduction of the final project I did for the class, SOCY604-Statistical Analysis.  
-[<img src="images/QGIS Class Lab 2 Second Image 2.jpg?raw=true"/>](/sample_page2) 
+GES687 Project 1- Map of the Median Income of 11 Puerto Rican Counties (2019)
+
+[<img src="images/The Median Income of 11 Puerto Ricans Counties 2019.jpg?raw=true"/>]
 
 ---
-GES687 Project 1 Findings from Puerto Rican Median Income Maps
+GES687 Project 1- Findings from the Maps that Show the Median Income of 11 Puerto Rican Counties in 2014 and 2019
 
 [<img src="images/Laura Bayona-Roman GES687 Project 1 Findings.jpg?raw=true"/>] 
 
