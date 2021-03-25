@@ -5,17 +5,17 @@
 ### Advanced GIS 
 GES687 Project 1- Map of the Median Income of 11 Puerto Rican Counties (2014)
 
-[<img src="images/The Median Income of 11 Puerto Rican Counties 2014.jpg?raw=true"/>]
+<img src="images/The Median Income of 11 Puerto Rican Counties 2014.jpg?raw=true"/>
 
 ---
 GES687 Project 1- Map of the Median Income of 11 Puerto Rican Counties (2019)
 
-[<img src="images/The Median Income of 11 Puerto Ricans Counties 2019.jpg?raw=true"/>]
+<img src="images/The Median Income of 11 Puerto Ricans Counties 2019.jpg?raw=true"/>
 
 ---
 GES687 Project 1- Findings from the Maps that Show the Median Income of 11 Puerto Rican Counties in 2014 and 2019
 
-[<img src="images/Laura Bayona-Roman GES687 Project 1 Findings.jpg?raw=true"/>] 
+<img src="images/Laura Bayona-Roman GES687 Project 1 Findings.jpg?raw=true"/>
 
 ---
 
