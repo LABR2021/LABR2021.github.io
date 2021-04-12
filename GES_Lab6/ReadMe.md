@@ -3,7 +3,7 @@
 ## Bivariate Choropleth Map Showing Changes Between 2008 and 2013
 
 ## Important Notes About the File Directory
-All the information about this lab is located in the GES_Lab6 folder of my Github repository. This folder contains a subfolder named Data where I uploaded all the raw and altered data. Moreover, I created an .Rmd file called RStudioPro.Rmd; this contains all the RStudio code I used to download the raw data, merge the data, and export it to QGIS. The index.md I made also contains the Rstudio code but it has a different format from the RStudioPro.Rmd. 
+All the information about this lab is located in the GES_Lab6 folder of my Github repository. This folder contains a subfolder named Data where I uploaded all the raw and altered data. Moreover, I created an .Rmd file called RStudioPro.Rmd; this contains all the RStudio code I used to download the raw data, merge the data, and export it to QGIS. The index.md I made also contains the Rstudio code but it has a different format from the RStudioPro.Rmd.  I also have a folder named Bin that containg merged data files.
 
 ## Introduction
 The topic of my map is the relationship between the presence of Puerto Ricans and housing vacancies in the state of Florida.  
