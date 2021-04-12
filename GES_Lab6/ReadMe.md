@@ -3,16 +3,56 @@
 ## Bivariate Choropleth Map Showing Changes Between 2008 and 2013
 
 ## Important Notes About the File Directory
-All the information about this lab is located in the GES_Lab6 folder of my Github repository. This folder contains a subfolder, two .md files, and one .rmd files. The name of the subfolder is Data because it containg the data used for the Lab. I have two .md files which are: 
+All the information about this lab is located in the GES_Lab6 folder of my Github repository. This folder contains a subfolder named Data where I uploaded all the raw and altered data. Moreover, I created an .Rmd file called RStudioPro.Rmd; this contains all the RStudio code I used to download the raw data, merge the data, and export it to QGIS. The index.md I made also contains the Rstudio code but it has a different format from the RStudioPro.Rmd. 
 
-Introduction: This map show the relationship between the percentage of Puerto Ricans and housing vacancies by counties in the state of Florida. It shows changes between the years 2008 and 2013. 
+## Introduction
+The topic of my map is the relationship between the presence of Puerto Ricans and housing vacancies in the state of Florida.  
 
-Data: The data will come from surveys and geografic files that are made by the U.S. Census Bureau. I would like to use data from the American Community Survey (https://www.census.gov/acs/www/data/data-tables-and-tools/data-profiles/) and the website Tiger Web (https://tigerweb.geo.census.gov/tigerwebmain/TIGERweb_main.html).
+## Data
+The data came from the 2010 and 2013 3 year American Community Survey.  The 2010 survey contains data between the years of 2008 and 2010. The 2013 data contains data between the years of 2011 and 2013. I used these two packages from Rstudio to download the data: tidyverse and tidycensus. I accessed these links to choose the variables from the surveys: https://api.census.gov/data/2010/acs/acs3/profile/variables.html and https://api.census.gov/data/2013/acs/acs3/profile/variables.html. The files that contain raw data are: PR2013.geojson, PR2010.cvs, HVacant2013.geojson, and HVacant2010.csv. The file with altered data are: PR_Florida_per and HVacant_Florida_per. 
 
-Transformations or subsets: I'm not sure if I will have to make transformations to the data. 
+## Transformations or subsets
+I changed the format of the raw data on Puerto Ricans and housing vacancies (from the 2013 3 year ACS survey). This data is now located in geojson files with a coordinate reference system of 3857.
+```{r}
+st_write(st_transform(PR2013per,3857), "PR2013per.geojson")
+```
+```{r}
+st_write(st_transform(HVacant2013per,3857), "HVacant2013per.geojson")
+```
+I changed the format of the raw data on Puerto Ricans and housing vacancies (from the 2010 3 year ACS survey). The data is now located in .csv files. 
+```{r}
+st_write(PR2010per, "PR2010per.csv") 
+```
+```{r}
+st_write(HVacant2010per, "HVacant2010per.csv") 
+```
 
-Analysis: I plan to create two shapefiles of the archipelago, (one representing 2010 and the other 2019), to show the changes in median income. To show the median income, I want to join two .csv files (that contain median income data from 2010 and 2019) with the shapefiles.
+I merged the 2010 and 2013 data on Puerto Ricans using the function left_join.
+```{r}
+PR_Florida_per <- left_join(PR2013per, PR2010per,
+                        by = "GEOID",
+                        copy = FALSE,
+                        suffix=c(".13",".10"))
+```
+I merged the 2010 and 2013 data on housing vacancies using the function left_join as well.
+```{r}
+HVacant_Florida_per <- left_join (HVacant2013per,  HVacant2010per,
+                              by = "GEOID",
+                              copy = FALSE,
+                              suffix = c(".13", ".10"))
+```
 
-Outputs: I plan to create two pdf images, containing the shapefiles of Puerto Rico in 2010 and 2019. Each shapefile will have labels and a legend showing the differences in median income. This is connected to the class because I'm using geographic data and I'm applying the techniques we learned in class. 
+## Analysis
+After merging the 2010 and 2013 data, I exported each altered variable to QGIS.
+```{r}
+st_write(PR_Florida_per, "PR_Florida_per.geojson")
+```
 
+```{r}
+st_write(HVacant_Florida_per, "HVacant_Florida_per.geojson")
+```
 
+In QGIS, I downloaded each layer to make the map that shows. Then I used the graduate symbology to represent changes in time. 
+
+## Outputs
+My output is a bivariate, choropleth map demonstrating the asssociation between the presence of Puerto Ricans and housing vacancies by counties in Florida (these changes are indicated by percentages). This map is related to the content of this class because I used geographic data and software to analyze the link between two variables that might significantly affect a specific population. 
