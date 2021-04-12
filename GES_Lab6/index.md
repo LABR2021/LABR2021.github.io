@@ -1,1 +1,119 @@
+---
+title: "Lab #6 GES687 Laura Bayona-Roman"
+output: 
+        html_notebook:
+                keep_md: true
+date: April 12, 2021
+
+---
+
+### The purpose of this lab is to make a choropleth map with two variables. 
+
+### Package Installation
+
+```{r}
+library (tidyverse)
+library (tidycensus)
+library(ggplot2)
+library (sf)
+```
+
+### Running tigris and the census api key
+
+```{r}
+options(tigris_class="sf")
+options(tigris_use_cache=TRUE)
+census_api_key("94e4f22691ce947e64eb28fd8e9c0ba431c4b343", overwrite=TRUE)
+```
+
+### Importing census data-American Community Survey 2010 span of 3 years
+### Percent of Puerto Ricans-Florida
+```{r}
+PR2010per<- get_acs(geography = "county", 
+     variables ="DP05_0068PE",  
+     year = 2010,
+     survey = "acs3",
+     state = c(12), 
+     geometry = FALSE, 
+     output = "wide") 
+```
+
+### Importing census data-American Community Survey 2013 span of 3 years
+### Percent of Puerto Ricans-Florida
+```{r}
+PR2013per<- get_acs(geography = "county", 
+     variables ="DP05_0068PE",  
+     year = 2013,
+     survey = "acs3",
+     state = c(12), 
+     geometry = TRUE, 
+     output = "wide")
+```
+
+### Importing census data-American Community Survey 2010 span of 3 years
+### Percent-Housing Occupancy-Vacant Housing Units
+```{r}
+HVacant2010per<- get_acs(geography = "county", 
+     variables ="DP04_0003PE",  
+     year = 2010,
+     survey = "acs3",
+     state = c(12), 
+     geometry = FALSE, 
+     output = "wide")
+```
+
+### Importing census data-American Community Survey 2013 span of 3 years
+### Percent-Housing Occupancy-Vacant Housing Units
+```{r}
+HVacant2013per<- get_acs(geography = "county", 
+     variables ="DP04_0003PE",  
+     year = 2013,
+     survey = "acs3",
+     state = c(12), 
+     geometry = TRUE, 
+     output = "wide")
+     
+### Attempt to Plot Percent of Puerto Ricans 2013
+```{r}
+ggplot(PR2013per) + geom_sf(aes(fill = DP05_0068PE))
+```
+### Attempt to transform files- Puerto Ricans
+```{r}
+st_write(st_transform(PR2013per,3857), "PR2013per.geojson")
+```
+```{r}
+st_write(PR2010per, "PR2010per.csv") 
+```
+
+### Attempt to transform files- Housing Vacancies
+```{r}
+st_write(st_transform(HVacant2013per,3857), "HVacant2013per.geojson")
+```
+```{r}
+st_write(HVacant2010per, "HVacant2010per.csv") 
+```
+
+### Attempt at Merging Time Periods-Puerto Ricans 
+```{r}
+PR_Florida_per <- left_join(PR2013per, PR2010per,
+                        by = "GEOID",
+                        copy = FALSE,
+                        suffix=c(".13",".10"))
+```
+
+### Attempt at Merging Time Periods- Housing Vacancies
+```{r}
+HVacant_Florida_per <- left_join (HVacant2013per,  HVacant2010per,
+                              by = "GEOID",
+                              copy = FALSE,
+                              suffix = c(".13", ".10"))
+```
+
+### Attempt at Exporting To QGIS
+```{r}
+st_write(PR_Florida_per, "PR_Florida_per.geojson")
+```
+```{r}
+st_write(HVacant_Florida_per, "HVacant_Florida_per.geojson")
+```
 
