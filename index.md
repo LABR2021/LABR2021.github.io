@@ -18,11 +18,16 @@ GES687 Project 1- Findings from the Maps that Show the Median Income of 11 Puert
 <img src="images/Laura Bayona-Roman GES687 Project 1 Findings.jpg?raw=true"/>
 
 ---
+GES687 Lab 6- Bivariate Choropleth Map Showing Changes Between 2008 and 2013
 
-### Links to Projects
+<img src="images/
+
+---
+
+### Links to Project Repositories
 
 - [Final Project Proposal GES687](http://github.com/LABR2021/LABR2021.github.io/tree/master/Project%201_687.md/) 
-- [Project 2 Title](http://sample_page.md/)
+- [Project 2 Title](http://example.com/)
 - [Project 3 Title](http://example.com/)
 - [Project 4 Title](http://example.com/)
 - [Project 5 Title](http://example.com/)
