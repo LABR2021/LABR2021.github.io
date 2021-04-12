@@ -2,7 +2,10 @@
 
 ## Bivariate Choropleth Map Showing Changes Between 2008 and 2013
 
-Introuduction: This map show the relationship between the percentage of Puerto Ricans and housing vacancies by counties in the state of Florida. It shows changes between the years 2008 and 2013. 
+## Important Notes About the File Directory
+All the information about this lab is located in the GES_Lab6 folder of my Github repository. This folder contains a subfolder, two .md files, and one .rmd files. The name of the subfolder is Data because it containg the data used for the Lab. I have two .md files which are: 
+
+Introduction: This map show the relationship between the percentage of Puerto Ricans and housing vacancies by counties in the state of Florida. It shows changes between the years 2008 and 2013. 
 
 Data: The data will come from surveys and geografic files that are made by the U.S. Census Bureau. I would like to use data from the American Community Survey (https://www.census.gov/acs/www/data/data-tables-and-tools/data-profiles/) and the website Tiger Web (https://tigerweb.geo.census.gov/tigerwebmain/TIGERweb_main.html).
 
