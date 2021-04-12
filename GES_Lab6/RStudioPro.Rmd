@@ -38,7 +38,7 @@ PR2010per<- get_acs(geography = "county",
      output = "wide") 
 ```
 
-### Importing census data-American Community Survey 2010 span of 3 years
+### Importing census data-American Community Survey 2013 span of 3 years
 ### Percent of Puerto Ricans-Florida
 ```{r}
 PR2013per<- get_acs(geography = "county", 
