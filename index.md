@@ -28,7 +28,7 @@ GES687 Project 1- Findings from the Maps that Show the Median Income of 11 Puert
 ### Links to the Repositories of Projects and Labs
 
 - [Final Project Proposal GES687](http://github.com/LABR2021/LABR2021.github.io/tree/master/Project%201_687.md/) 
-- [GES687 Lab Bivariate Choropleth Map]()
+- [GES687 Lab Bivariate Choropleth Map](http://github.com/GES_Lab6/)
 - [Project 3 Title](http://example.com/)
 - [Project 4 Title](http://example.com/)
 - [Project 5 Title](http://example.com/)
