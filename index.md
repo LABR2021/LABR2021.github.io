@@ -3,6 +3,12 @@
 ---
 
 ### Advanced GIS 
+[GES687 Lab 6- Bivariate Choropleth Map Showing Changes Between 2008 and 2013](/GES_Lab6/index)
+
+[<img src="images/Official 2 GES687 Lab 6 Bivariate Choropleth Map1024_1.jpg?raw=true"/>](/GES_Lab6/index)
+
+---
+
 GES687 Project 1- Map of the Median Income of 11 Puerto Rican Counties (2014)
 
 <img src="images/The Median Income of 11 Puerto Rican Counties 2014.jpg?raw=true"/>
@@ -18,12 +24,7 @@ GES687 Project 1- Findings from the Maps that Show the Median Income of 11 Puert
 <img src="images/Laura Bayona-Roman GES687 Project 1 Findings.jpg?raw=true"/>
 
 ---
-GES687 Lab 6- Bivariate Choropleth Map Showing Changes Between 2008 and 2013
-
-[<img src="images/Official 2 GES687 Lab 6 Bivariate Choropleth Map1024_1.jpg?raw=true"/>](/GES_Lab6/index) 
-
----
-
+ 
 ### Links to the Repositories of Projects and Labs
 
 - [Final Project Proposal GES687](http://github.com/LABR2021/LABR2021.github.io/tree/master/Project%201_687.md/) 
