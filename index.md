@@ -3,9 +3,9 @@
 ---
 
 ### Advanced GIS 
-[GES687 Lab 6- Bivariate Choropleth Map Showing Changes Between 2008 and 2013](/GES_Lab6/ReadMe.md)
+[GES687 Lab 6- Bivariate Choropleth Map Showing Changes Between 2008 and 2013](/ReadMe.md)
 
-[<img src="images/Official 2 GES687 Lab 6 Bivariate Choropleth Map1024_1.jpg?raw=true"/>](/GES_Lab6/ReadMe.md)
+[<img src="images/Official 2 GES687 Lab 6 Bivariate Choropleth Map1024_1.jpg?raw=true"/>](/ReadMe.md)
 
 ---
 
