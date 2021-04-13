@@ -20,7 +20,7 @@ GES687 Project 1- Findings from the Maps that Show the Median Income of 11 Puert
 ---
 GES687 Lab 6- Bivariate Choropleth Map Showing Changes Between 2008 and 2013
 
-<img src="images/Official 2 GES687 Lab 6 Bivariate Choropleth Map1024_1.jpg?raw=true"/> 
+[<img src="images/Official 2 GES687 Lab 6 Bivariate Choropleth Map1024_1.jpg?raw=true"/>](/GES_Lab6/index) 
 
 ---
 
