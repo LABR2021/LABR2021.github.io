@@ -3,7 +3,7 @@
 ---
 
 ### Advanced GIS 
-[GES687 Lab 8- Bivariate Map of Race/Ethnicity and Median Household Income in Howard County, Maryland](index.html)
+GES687 Lab 8- Bivariate Map of Race/Ethnicity and Median Household Income in Howard County, Maryland
 
 <img src="images/GES687 Lab 8 Bivariate Map 2.2.png?raw=true"/>
 
