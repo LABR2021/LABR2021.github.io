@@ -1,0 +1,227 @@
+---
+title: "GES687 Final Project"
+author: "Laura Bayona-Roman"
+date: "5/18/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+#### Installing Packages
+```{r}
+library(tidyverse)
+library(tidycensus)
+library(ggplot2)
+theme_bw()
+library(sf)
+library(sp)
+library(biscale)
+library(cowplot)
+```
+#### Running the Census API key again
+```{r}
+options(tigris_class="sf")
+options(tigris_use_cache=TRUE)
+census_api_key("94e4f22691ce947e64eb28fd8e9c0ba431c4b343", overwrite=TRUE)
+```
+#### Loading 2016 5 year American Community Survey Data
+```{r}
+ACS16 <- load_variables(2016, "acs5", cache = TRUE)
+View(ACS16)
+```
+#### Loading Data on Race (African American/Black, White, and Asian) and Education (Bachelor's Degree in Puerto Rico)- 2016 5 year ACS data
+```{r}
+PR_Race_Edu16_Off2 <- get_acs(geography = "tract", 
+                      variables= c("PR_Pop_AfricanAmerican_Black" = "B06004BPR_002", #Born in Puerto Rico
+                      "PR_Pop_White" = "B06004APR_002", #Born in Puerto Rico, 
+                      "PR_Pop_Asian" = "B06004DPR_002", #Born in Puerto Rico,
+                      "PR_Pop_Bachelors" = "B06009PR_011", #Born in Puerto Rico
+                      "PR_Pop_Native" = "B05012PR_002", #Total
+                      "PR_Pop_Education" = "B06009PR_007"), #Total
+                  
+                      year = 2016,
+                      survey = "acs5",
+                      state = c(72), 
+                      geometry = TRUE,
+                      output = "wide")
+```
+#### Getting Percentages for Race and Education (2016 5 year ACS Puerto Rico)
+```{r}
+PR_Race_Edu16_Off2 <- PR_Race_Edu16_Off2 %>% mutate(AfricanAmerican_Black_Percent =  PR_Pop_AfricanAmerican_BlackE / PR_Pop_NativeE * 100)
+```
+
+```{r}
+PR_Race_Edu16_Off2 <- PR_Race_Edu16_Off2 %>% mutate(White_Percent =  PR_Pop_WhiteE / PR_Pop_NativeE * 100)
+```
+
+```{r}
+PR_Race_Edu16_Off2 <- PR_Race_Edu16_Off2 %>% mutate(Asian_Percent =  PR_Pop_AsianE / PR_Pop_NativeE * 100)
+```
+
+```{r}
+PR_Race_Edu16_Off2<- PR_Race_Edu16_Off2 %>% mutate(Bachelors_Percent =  PR_Pop_BachelorsE / PR_Pop_EducationE * 100)
+```
+#### Plotting Maps- Race
+#### African American/Black (Purple HTML Colors)
+```{r}
+PR_Race_Edu16_Off2 %>% 
+filter(AfricanAmerican_Black_Percent != "NaN") %>%
+ggplot() +
+geom_sf(aes(fill= AfricanAmerican_Black_Percent, color= AfricanAmerican_Black_Percent)) + scale_fill_gradient(low= "#c67aff", high= "#540094", space= "Lab", na.value= "#7c00db", guide= "colourbar", aesthetics= "fill") + 
+scale_color_gradient(low= "#c67aff", high= "#540094", space= "Lab", na.value= "#7c00db", guide= "colourbar", aesthetics= "colour") +
+theme_bw()
+```
+#### White (Pink HTML Colors)
+```{r}
+PR_Race_Edu16_Off2 %>% 
+  filter(White_Percent != "NaN") %>% 
+ggplot() +
+geom_sf(aes(fill= White_Percent, color= White_Percent)) + scale_fill_gradient(low= "#ffe6f2", high= "#ff0080", space= "Lab", na.value= "#ff7abd", guide= "colourbar", aesthetics= "fill") + 
+scale_color_gradient(low= "#ffe6f2", high= "#ff0080", space= "Lab", na.value= "#ff7abd", guide= "colourbar", aesthetics= "colour") +
+theme_bw()
+```
+#### Asian (Orange HTML Colors)
+```{r}
+PR_Race_Edu16_Off2 %>% 
+  filter(Asian_Percent != "NaN") %>% 
+ggplot() +
+geom_sf(aes(fill= Asian_Percent, color= Asian_Percent)) + scale_fill_gradient(low= "#ffd17a", high= "#946000", space= "Lab", na.value= "#f59f00", guide= "colourbar", aesthetics= "fill") + 
+scale_color_gradient(low= "#ffd17a", high= "#946000", space= "Lab", na.value= "#f59f00", guide= "colourbar", aesthetics= "colour") +
+theme_bw()
+```
+#### Plotting Maps Education
+#### Bachelor's Degree (Olive HTML Colors)
+```{r}
+PR_Race_Edu16_Off2 %>% 
+  filter(Bachelors_Percent != "NaN") %>%
+ggplot() +
+geom_sf(aes(fill= Bachelors_Percent, color= Bachelors_Percent)) + scale_fill_gradient(low= "#fafa00", high= "#858500", space= "Lab", na.value= "#c2c200", guide= "colourbar", aesthetics= "fill") + 
+scale_color_gradient(low= "#fafa00", high= "#858500", space= "Lab", na.value= "#c2c200", guide= "colourbar", aesthetics= "colour") +
+theme_bw()
+```
+#### Plotting Bivariate Maps
+#### African American/Black and Bachelor's Degree
+```{r}
+PR_Race_Edu16_Off2 <- bi_class(PR_Race_Edu16_Off2, x= AfricanAmerican_Black_Percent, y= Bachelors_Percent, style= "equal", dim= 3)
+```
+#### Filtering Out Missing Values from bi_class
+```{r}
+PR_Race_Edu16_Off2= PR_Race_Edu16_Off2%>%filter(bi_class != "NA-NA")
+```{r}
+Bivariate_RE_Off2.1 <- ggplot() +
+  geom_sf(data= PR_Race_Edu16_Off2, mapping= aes(fill= bi_class), color= "white", size= 0.1, show.legend= FALSE) + 
+  bi_scale_fill(pal= "DkViolet", dim= 3) +
+  labs(
+    title= "Race and Bachelor's Degree in Puerto Rico",
+    subtile= "Race is African American/Black") +
+  bi_theme() 
+
+Bivariate_RE_Off2.1
+```
+```{r}
+RE_PR_legend_Off2.1 <- bi_legend(pal = "DkViolet",
+                           dim= 3,
+                           xlab= "Higher % African American/Black",
+                           ylab= "Higher % Bachelor's Degree %",
+                           size= 7)
+```
+
+```{r}
+ggdraw() + draw_plot(Bivariate_RE_Off2.1, 0, 0, 1, 1) + draw_plot(RE_PR_legend_Off2.1, 0.35, .70, 0.35, 0.35)
+```
+#### White and Bachelor's Degree
+```{r}
+PR_Race_Edu16_Off2 <- bi_class(PR_Race_Edu16_Off2, x= White_Percent, y= Bachelors_Percent, style= "equal", dim= 3)
+```
+
+```{r}
+Bivariate_RE_Off3.1 <- ggplot() +
+  geom_sf(data= PR_Race_Edu16_Off2, mapping= aes(fill= bi_class), color= "white", size= 0.1, show.legend= FALSE) + 
+  bi_scale_fill(pal= "DkBlue", dim= 3) +
+  labs(
+    title= "Race and Bachelor's Degree in Puerto Rico",
+    subtile= "Race is White") +
+  bi_theme() 
+
+Bivariate_RE_Off3.1
+```
+```{r}
+RE_PR_legend_Off3.1 <- bi_legend(pal = "DkBlue",
+                           dim= 3,
+                           xlab= " Higher % White",
+                           ylab= "Higher % Bachelor's Degree",
+                           size= 7)
+```
+```{r}
+ggdraw() + draw_plot(Bivariate_RE_Off3.1, 0, 0, 1, 1) + draw_plot(RE_PR_legend_Off3.1, 0.35, .70, 0.35, 0.35)
+```
+#### Asian and Bachelor's Degree
+```{r}
+PR_Race_Edu16_Off2 <- bi_class(PR_Race_Edu16_Off2, x= Asian_Percent, y= Bachelors_Percent, style= "equal", dim= 3)
+```
+
+```{r}
+Bivariate_RE_Off4.1 <- ggplot() +
+  geom_sf(data= PR_Race_Edu16_Off2, mapping= aes(fill= bi_class), color= "white", size= 0.1, show.legend= FALSE) + 
+  bi_scale_fill(pal= "GrPink", dim= 3) +
+  labs(
+    title= "Race and Bachelor's Degree in Puerto Rico",
+    subtile= "Race is Asian") +
+  bi_theme() 
+
+Bivariate_RE_Off4.1
+```
+```{r}
+RE_PR_legend_Off4.1 <- bi_legend(pal = "GrPink",
+                           dim= 3,
+                           xlab= " Higher % Asian",
+                           ylab= "Higher % Bachelor's Degree",
+                           size= 7)
+```
+
+```{r}
+ggdraw() + draw_plot(Bivariate_RE_Off4.1, 0, 0, 1, 1) + draw_plot(RE_PR_legend_Off4.1, 0.35, .70, 0.35, 0.35)
+```
+#### Checking the Coordinate Reference System
+```{r}
+st_crs(PR_Race_Edu16_Off2)
+```
+### Exporting Output 1- African American/Black Bi_Class
+```{r, eval= FALSE}
+st_write(PR_Race_Edu16_Off2,  "C:/Users/lbayo/Documents/RStudio Test/FinalProject_BiMap_1.geojson")
+```
+### Exporting Output2- White Bi_Class
+```{r, eval= FALSE}
+st_write(PR_Race_Edu16_Off2,  "C:/Users/lbayo/Documents/RStudio Test/FinalProject_BiMap_2.geojson")
+```
+### Exporting Output 3- Asian Bi_Class
+```{r, eval= FALSE}
+st_write(PR_Race_Edu16_Off2,  "C:/Users/lbayo/Documents/RStudio Test/FinalProject_BiMap_3.geojson")
+```
+#### Turning Dataframe into CSV file
+```{r, eval= FALSE}
+st_write(PR_Race_Edu16_Off2, "PR_Race_Edu16_Off2.csv") 
+```
