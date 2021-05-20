@@ -1,7 +1,7 @@
 ---
 title: "GES687 Final Project"
 author: "Laura Bayona-Roman"
-date: "5/18/2021"
+date: "May 18, 2021
 output: html_document
 ---
 #### Installing Packages
