@@ -4,7 +4,7 @@
 
 ### GES687- Advanced GIS Class
 
-### These are the maps I made for the final project of GES687 class. The maps shows the relationship between race/ethnicity and educational attainment in Puerto Rico.  Each map contains a link to a project page; the page shows how I made the project and saved the information. 
+### These are the maps I made for the final project of GES687 class. The maps shows the relationship between race/ethnicity and educational attainment in Puerto Rico.  The first map of each section contains a link to a project page; the page shows how I made the project and saved the information. 
 
 #### Single Variable Maps
 [<img src="images/Official Estimates Black PR.jpg?raw=true"/>](Final Project GES687/sample_pagefp.md)
