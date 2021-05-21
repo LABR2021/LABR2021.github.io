@@ -7,29 +7,46 @@
 ### These are the maps I made for the final project of GES687 class. The maps shows the relationship between race/ethnicity and educational attainment in Puerto Rico.  Each map contains a link to a project page; the page shows how I made the project and saved the information. 
 
 #### Single Variable Maps
-<img src="images/Official Estimates Black PR.jpg?raw=true"/>
+[<img src="images/Official Estimates Black PR.jpg?raw=true"/>](sample_pagefp.md)
 
 ---
 
-[<img src="images/Official Estimates White PR-Image.png?raw=true"/>](GES_Lab6/index)
+[<img src="images/Official Estimates White PR.jpg?raw=true"/>](sample_pagefp.md)
 
 ---
 
-GES687 Project 1- Map of the Median Income of 11 Puerto Rican Counties (2014)
-
-<img src="images/The Median Income of 11 Puerto Rican Counties 2014.jpg?raw=true"/>
+[<img src="images/Official Estimates Asian PR.jpg?raw=true"/>](sample_pagefp.md)
 
 ---
-GES687 Project 1- Map of the Median Income of 11 Puerto Rican Counties (2019)
 
-<img src="images/The Median Income of 11 Puerto Ricans Counties 2019.jpg?raw=true"/>
-
----
-GES687 Project 1- Findings from the Maps that Show the Median Income of 11 Puerto Rican Counties in 2014 and 2019
-
-<img src="images/Laura Bayona-Roman GES687 Project 1 Findings.jpg?raw=true"/>
+[<img src="images/Official Estimates Bachelors PR.jpg?raw=true"/>](sample_pagefp.md)
 
 ---
+
+#### Bivariate Maps
+
+[<img src="images/Bivariate Map Black PR.jpg?raw=true"/>](sample_pagefp.md)
+
+---
+
+[<img src="images/Bivariate Map White PR.jpg?raw=true"/>](sample_pagefp.md)
+
+---
+
+[<img src="images/Bivariate Map Asian PR.jpg?raw=true"/>](sample_pagefp.md)
+
+---
+
+#### Spatial Analysis Maps
+[<img src="images/Official Black PR Analysis.jpg?raw=true"/>](sample_pagefp.md)
+
+---
+
+[<img src="images/Official White PR Analysis.jpg?raw=true"/>](sample_pagefp.md)
+
+---
+
+[<img src="images/Official Asian PR Analysis.jpg?raw=true"/>](sample_pagefp.md)
  
 ### Links to the Repositories of Projects and Labs
 
