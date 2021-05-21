@@ -7,11 +7,11 @@
 ### These are the maps I made for the final project of GES687 class. The maps shows the relationship between race/ethnicity and educational attainment in Puerto Rico.  Each map contains a link to a project page; the page shows how I made the project and saved the information. 
 
 #### Single Variable Maps
-[<img src="Official Estimates Black PR-Image.png?raw=true"/>](sample_pagefp.md)
+<img src="images/Official Estimates Black PR.jpg?raw=true"/>
 
 ---
 
-[<img src="images/Official Estimates White PR-Image.png.jpg?raw=true"/>](GES_Lab6/index)
+[<img src="images/Official Estimates White PR-Image.png?raw=true"/>](GES_Lab6/index)
 
 ---
 
