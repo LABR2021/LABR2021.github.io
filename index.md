@@ -11,15 +11,15 @@
 
 ---
 
-[<img src="images/Official Estimates White PR.jpg?raw=true"/>](Final Project GES687/sample_pagefp.md)
+<img src="images/Official Estimates White PR.jpg?raw=true"/>
 
 ---
 
-[<img src="images/Official Estimates Asian PR.jpg?raw=true"/>](Final Project GES687/sample_pagefp.md)
+<img src="images/Official Estimates Asian PR.jpg?raw=true"/>
 
 ---
 
-[<img src="images/Official Estimates Bachelors PR.jpg?raw=true"/>](Final Project GES687/sample_pagefp.md)
+<img src="images/Official Estimates Bachelors PR.jpg?raw=true"/>
 
 ---
 
@@ -29,11 +29,11 @@
 
 ---
 
-[<img src="images/Bivariate Map White PR.jpg?raw=true"/>](Final Project GES687/sample_pagefp.md)
+<img src="images/Bivariate Map White PR.jpg?raw=true"/>
 
 ---
 
-[<img src="images/Bivariate Map Asian PR.jpg?raw=true"/>](Final Project GES687/sample_pagefp.md)
+<img src="images/Bivariate Map Asian PR.jpg?raw=true"/>
 
 ---
 
@@ -42,11 +42,11 @@
 
 ---
 
-[<img src="images/Official White PR Analysis.jpg?raw=true"/>](Final Project GES687/sample_pagefp.md)
+<img src="images/Official White PR Analysis.jpg?raw=true"/>
 
 ---
 
-[<img src="images/Official Asian PR Analysis.jpg?raw=true"/>](Final Project GES687/sample_pagefp.md)
+<img src="images/Official Asian PR Analysis.jpg?raw=true"/>
  
 ### Links to the Repositories of Projects and Labs
 
