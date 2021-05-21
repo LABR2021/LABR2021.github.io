@@ -2,10 +2,12 @@
 
 ---
 
-### Advanced GIS 
-GES687 Lab 8- Bivariate Map of Race/Ethnicity and Median Household Income in Howard County, Maryland
+### GES687- Advanced GIS Class
 
-<img src="images/GES687 Lab 8 Bivariate Map 2.2.png?raw=true"/>
+### These are the maps I made for the final project of GES687 class. The maps shows the relationship between race/ethnicity and educational attainment in Puerto Rico.  Each map contains a link to a project page; the page shows how I made the project and saved the information. 
+
+#### Single Variable Maps
+[<img src="images/Official Estimates Black PR-Image.png?raw=true"/>](/sample.pagefp.md)
 
 ---
 
